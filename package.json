@@ -1,0 +1,42 @@
+{
+  "name": "apiautomationinterview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "npx wdio apidb.conf.js --suite api",
+    "report": "allure serve ./allure-results"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^99.0.0",
+    "edgedriver": "^4.17134.1",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "get-line": "^0.1.2",
+    "mssql": "^8.1.2",
+    "node-gyp": "^9.3.1",
+    "nodemon": "^2.0.22",
+    "webdriverio": "^8.10.5"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^5.22.4",
+    "@wdio/cli": "^6.12.1",
+    "@wdio/junit-reporter": "^7.18.0",
+    "@wdio/local-runner": "^6.12.1",
+    "@wdio/mocha-framework": "^7.20.3",
+    "@wdio/selenium-standalone-service": "^7.19.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "allure-commandline": "^2.13.8",
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "msedgedriver": "^91.0.0",
+    "should": "^13.2.3",
+    "wdio-chromedriver-service": "^7.0.0",
+    "wdio-edgedriver-service": "^1.2.0"
+  }
+}

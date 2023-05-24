@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="test stocks API" timestamp="2023-05-24T17:18:12" time="0.173" tests="9" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="test stocks API"/>
+      <property name="capabilities" value="chrome.113_0_5672_127.windows"/>
+      <property name="file" value=".\test\specs\apiTests.js"/>
+    </properties>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Send the request with incorrect baseURI and verify the response code is 404 Not Found" time="0.004">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Pass invalid characters in the request body and verify the response code is 400 Bad Request" time="0.002">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Pass all the valid input in all the fields and send the request then the response code should be 200 OK" time="0.002">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="should validate response body" time="0.001">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="should validate response headers" time="0.002">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="the request behavior does not work as intended theres a bug" time="0.041">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Pass date as 29 feb in non leap year and try submitting the request it should throw 400 Bad Request" time="0.01">
+      <system-out><![CDATA[
+RESULT: {}
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Pass date as 32 jan 2000 and try submitting the request it should throw 400 Bad Request" time="0.016">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Provide String value in the date field and trigger the request it should throw 400 Bad Request" time="0.006">
+      <system-out><![CDATA[
+COMMAND: GET /session/b043700993fef1d4a92e066c05a764fa/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/b043700993fef1d4a92e066c05a764fa - {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
