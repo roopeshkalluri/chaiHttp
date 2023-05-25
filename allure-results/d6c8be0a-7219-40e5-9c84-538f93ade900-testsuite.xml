@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685020904546' stop='1685020904553'>
+    <name>test stocks API</name>
+    <title>test stocks API</title>
+    <test-cases>
+        <test-case start='1685020904546' status='failed' stop='1685020904551'>
+            <name>(boundary value scenario) >>Pass date as 32 jan 2011 and try submitting the request, it should throw 400 Bad Request </name>
+            <title>(boundary value scenario) >>Pass date as 32 jan 2011 and try submitting the request, it should throw 400 Bad Request </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='BROWSER' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>test validation failed</message>
+                <stack-trace>AssertionError: test validation failed
+                    at Context.&lt;anonymous> (C:\myworkfolder\Automation frameworks\apiAutomationInterview\test\specs\apiTests.js:81:20)
+                    at Context.executeAsync (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
