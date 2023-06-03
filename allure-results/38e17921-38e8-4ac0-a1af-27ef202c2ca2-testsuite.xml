@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685801866279' stop='1685801866288'>
+    <name>test stocks API</name>
+    <title>test stocks API</title>
+    <test-cases>
+        <test-case start='1685801866280' status='passed' stop='1685801866286'>
+            <name>TC04 - should validate response body</name>
+            <title>TC04 - should validate response body</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='BROWSER' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

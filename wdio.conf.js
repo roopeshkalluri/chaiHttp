@@ -22,7 +22,7 @@ exports.config = {
     }]],
 
      suites: {
-		api : ['./test/specs/apiTests.js'],
+		api : ['./test/specs/apiRequest.js'],
     },
 
     //

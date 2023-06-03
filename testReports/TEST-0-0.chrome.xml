@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="test stocks API" timestamp="2023-05-25T18:55:04" time="0.013" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="test stocks API" timestamp="2023-06-03T20:10:13" time="0.019" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="test stocks API"/>
       <property name="capabilities" value="chrome.113_0_5672_127.windows"/>
-      <property name="file" value=".\test\specs\apiTests.js"/>
+      <property name="file" value=".\test\specs\apiRequest.js"/>
     </properties>
-    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="Pass all the valid input in all the fields and send the request then the response code should be 200 OK" time="0.006">
-      <failure/>
-      <error message="test validation failed"/>
+    <testcase classname="chrome.113_0_5672_127.windows.test_stocks_API" name="TC03 Pass all the valid input in all the fields and send the request then the response code should be 200 OK" time="0.009">
       <system-out><![CDATA[
-COMMAND: GET /session/f03915a96daf6cb42db0fc49bebc292f/screenshot - {}
-COMMAND: DELETE /session/f03915a96daf6cb42db0fc49bebc292f - {}
+COMMAND: GET /session/7fc20abcb4084ed16cd3d71ad9d866b1/screenshot - {}
+COMMAND: DELETE /session/7fc20abcb4084ed16cd3d71ad9d866b1 - {}
 RESULT: {}
 RESULT: {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-AssertionError: test validation failed
-    at Context.<anonymous> (C:\myworkfolder\Automation frameworks\apiAutomationInterview\test\specs\apiTests.js:44:20)
-    at Context.executeAsync (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\shim.js:333:27)
-    at Context.testFrameworkFnWrapper (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

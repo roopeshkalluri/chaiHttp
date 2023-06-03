@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685801998326' stop='1685801998335'>
+    <name>test stocks API</name>
+    <title>test stocks API</title>
+    <test-cases>
+        <test-case start='1685801998327' status='broken' stop='1685801998333'>
+            <name>TC01 -Send the request with incorrect baseURI and verify the response code is 404 Not Found</name>
+            <title>TC01 -Send the request with incorrect baseURI and verify the response code is 404 Not Found</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='BROWSER' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>The "urlObject" argument must be one of type object or string. Received undefined</message>
+                <stack-trace>TypeError [ERR_INVALID_ARG_TYPE]: The "urlObject" argument must be one of type object or string. Received undefined
+                    at urlFormat (url.js:557:11)
+                    at Test.Request (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\superagent\lib\node\index.js:137:37)
+                    at new Test (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\chai-http\lib\request.js:269:11)
+                    at Object.obj.&lt;computed> [as get] (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\chai-http\lib\request.js:239:14)
+                    at Context.&lt;anonymous> (C:\myworkfolder\Automation frameworks\apiAutomationInterview\test\specs\apiRequest.js:76:12)
+                    at Context.executeAsync (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
