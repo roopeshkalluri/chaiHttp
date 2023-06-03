@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1685802812890' stop='1685802812906'>
+    <name>test stocks API</name>
+    <title>test stocks API</title>
+    <test-cases>
+        <test-case start='1685802812891' status='passed' stop='1685802812895'>
+            <name>TC02 -Pass invalid characters in the request body and verify the response code is 400 Bad Request</name>
+            <title>TC02 -Pass invalid characters in the request body and verify the response code is 400 Bad Request</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='BROWSER' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1685802812898' status='failed' stop='1685802812903'>
+            <name>TC03 - Pass all the valid input in all the fields and send the request  then the response code should be 200 OK</name>
+            <title>TC03 - Pass all the valid input in all the fields and send the request  then the response code should be 200 OK</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='BROWSER' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 200 to be 400</message>
+                <stack-trace>AssertionError: expected 200 to be 400
+                    at Assertion.fail (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\should\cjs\should.js:275:17)
+                    at Assertion.value (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\should\cjs\should.js:356:19)
+                    at C:\myworkfolder\Automation frameworks\apiAutomationInterview\test\specs\apiRequest.js:16:32
+                    at Test.Request.callback (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\superagent\lib\node\index.js:716:12)
+                    at C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\superagent\lib\node\index.js:916:18
+                    at IncomingMessage.&lt;anonymous> (C:\myworkfolder\Automation frameworks\apiAutomationInterview\node_modules\superagent\lib\node\parsers\json.js:19:7)
+                    at IncomingMessage.emit (events.js:387:35)
+                    at IncomingMessage.emit (domain.js:470:12)
+                    at endReadableNT (internal/streams/readable.js:1317:12)
+                    at processTicksAndRejections (internal/process/task_queues.js:82:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
